@@ -9,12 +9,14 @@ import java.util.*;
 // version: 1.1
 // made by Vitali Shulha
 // 4-Jan-2019
+//USEFUL COMMENT
 
 public class Airport {
     private List<? extends Plane> planes;
 
 
 
+    //SHORT CUT OF METHOD NAME???
     public List<PassengerPlane> getPasPl() {
         List<? extends Plane> l = this.planes;
         List<PassengerPlane> x = new ArrayList<>();
@@ -22,6 +24,7 @@ public class Airport {
         return x;
     }
 
+    //IF, ELSE COMMENTS ARE REDUNDANT
     public List<MilitaryPlane> getMilitaryPlanes() {
         List<MilitaryPlane> militaryPlanes = new ArrayList<>();
         for (Plane plane : planes) {
@@ -43,9 +46,6 @@ public class Airport {
                 planeWithMaxCapacity = passengerPlanes.get(i);
             }
         }
-
-
-
 
 
 
