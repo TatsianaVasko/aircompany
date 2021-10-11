@@ -25,6 +25,8 @@ public class Airport {
     }
 
     //IF, ELSE COMMENTS ARE REDUNDANT
+    //else {} is empty >> redundant
+    // >>   } else {}
     public List<MilitaryPlane> getMilitaryPlanes() {
         List<MilitaryPlane> militaryPlanes = new ArrayList<>();
         for (Plane plane : planes) {
@@ -46,9 +48,7 @@ public class Airport {
                 planeWithMaxCapacity = passengerPlanes.get(i);
             }
         }
-
-
-
+//REDUNDANT EMPTY STRINGS
         return planeWithMaxCapacity;
     }
 
